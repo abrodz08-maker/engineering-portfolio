@@ -1897,3 +1897,36 @@ nav a:hover {
     position: relative;
     z-index: 2;
 }
+
+/* DARK CINEMATIC OVERLAY */
+
+.cinematic-hero .hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+
+    background: linear-gradient(
+        90deg,
+        rgba(5, 12, 17, 0.90) 0%,
+        rgba(5, 12, 17, 0.75) 50%,
+        rgba(5, 12, 17, 0.60) 100%
+    );
+}
+
+/* Keep slideshow behind overlay */
+
+.cinematic-hero .hero-slideshow {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+/* Keep text above everything */
+
+.cinematic-hero .hero-top,
+.cinematic-hero .hero-content,
+.cinematic-hero .hero-footer {
+    position: relative;
+    z-index: 3;
+}
